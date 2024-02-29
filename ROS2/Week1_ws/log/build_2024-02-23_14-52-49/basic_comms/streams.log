@@ -1,0 +1,24 @@
+[1.618s] Invoking command in '/home/fsp/ROS2_puzzle_bot/Week1_ws/src/basic_comms': PYTHONPATH=/home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms/prefix_override:/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/basic_comms build --build-base /home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms/build install --record /home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms/install.log --single-version-externally-managed
+[1.959s] running egg_info
+[1.960s] writing ../../build/basic_comms/basic_comms.egg-info/PKG-INFO
+[1.961s] writing dependency_links to ../../build/basic_comms/basic_comms.egg-info/dependency_links.txt
+[1.962s] writing entry points to ../../build/basic_comms/basic_comms.egg-info/entry_points.txt
+[1.962s] writing requirements to ../../build/basic_comms/basic_comms.egg-info/requires.txt
+[1.962s] writing top-level names to ../../build/basic_comms/basic_comms.egg-info/top_level.txt
+[1.965s] reading manifest file '../../build/basic_comms/basic_comms.egg-info/SOURCES.txt'
+[1.966s] writing manifest file '../../build/basic_comms/basic_comms.egg-info/SOURCES.txt'
+[1.967s] running build
+[1.967s] running build_py
+[1.967s] running install
+[1.967s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.967s]   warnings.warn(
+[1.968s] running install_lib
+[1.970s] running install_data
+[1.971s] running install_egg_info
+[1.974s] removing '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/lib/python3.10/site-packages/basic_comms-0.0.0-py3.10.egg-info' (and everything under it)
+[1.975s] Copying ../../build/basic_comms/basic_comms.egg-info to /home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/lib/python3.10/site-packages/basic_comms-0.0.0-py3.10.egg-info
+[1.976s] running install_scripts
+[2.004s] Installing listener script to /home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/lib/basic_comms
+[2.005s] Installing talker script to /home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/lib/basic_comms
+[2.005s] writing list of installed files to '/home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms/install.log'
+[2.055s] Invoked command in '/home/fsp/ROS2_puzzle_bot/Week1_ws/src/basic_comms' returned '0': PYTHONPATH=/home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms/prefix_override:/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/basic_comms build --build-base /home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms/build install --record /home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms/install.log --single-version-externally-managed

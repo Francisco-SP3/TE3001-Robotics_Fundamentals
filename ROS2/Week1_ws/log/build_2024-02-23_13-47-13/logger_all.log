@@ -1,0 +1,177 @@
+[1.368s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.368s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ff94220d000>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ff9426c7700>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ff9426c7700>>)
+[1.431s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.432s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/fsp/ROS2_puzzle_bot/Week1_ws'
+[1.432s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.449s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.449s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.449s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.449s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.449s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.450s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.450s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.450s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.450s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.450s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_comms) by extensions ['ignore', 'ignore_ament_install']
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_comms) by extension 'ignore'
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_comms) by extension 'ignore_ament_install'
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_comms) by extensions ['colcon_pkg']
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_comms) by extension 'colcon_pkg'
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_comms) by extensions ['colcon_meta']
+[1.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_comms) by extension 'colcon_meta'
+[1.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_comms) by extensions ['ros']
+[1.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/basic_comms) by extension 'ros'
+[1.456s] DEBUG:colcon.colcon_core.package_identification:Package 'src/basic_comms' with type 'ros.ament_python' and name 'basic_comms'
+[1.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/courseworks) by extensions ['ignore', 'ignore_ament_install']
+[1.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/courseworks) by extension 'ignore'
+[1.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/courseworks) by extension 'ignore_ament_install'
+[1.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/courseworks) by extensions ['colcon_pkg']
+[1.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/courseworks) by extension 'colcon_pkg'
+[1.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/courseworks) by extensions ['colcon_meta']
+[1.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/courseworks) by extension 'colcon_meta'
+[1.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/courseworks) by extensions ['ros']
+[1.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/courseworks) by extension 'ros'
+[1.458s] DEBUG:colcon.colcon_core.package_identification:Package 'src/courseworks' with type 'ros.ament_python' and name 'courseworks'
+[1.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.626s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/fsp/ROS2_puzzle_bot/Week1_ws/install
+[1.647s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 272 installed packages in /opt/ros/humble
+[1.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'basic_comms' build argument 'cmake_args' from command line to 'None'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'basic_comms' build argument 'cmake_target' from command line to 'None'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'basic_comms' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'basic_comms' build argument 'cmake_clean_cache' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'basic_comms' build argument 'cmake_clean_first' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'basic_comms' build argument 'cmake_force_configure' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'basic_comms' build argument 'ament_cmake_args' from command line to 'None'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'basic_comms' build argument 'catkin_cmake_args' from command line to 'None'
+[1.785s] Level 5:colcon.colcon_core.verb:set package 'basic_comms' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.785s] DEBUG:colcon.colcon_core.verb:Building package 'basic_comms' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms', 'merge_install': False, 'path': '/home/fsp/ROS2_puzzle_bot/Week1_ws/src/basic_comms', 'symlink_install': False, 'test_result_base': None}
+[1.805s] Level 5:colcon.colcon_core.verb:set package 'courseworks' build argument 'cmake_args' from command line to 'None'
+[1.805s] Level 5:colcon.colcon_core.verb:set package 'courseworks' build argument 'cmake_target' from command line to 'None'
+[1.805s] Level 5:colcon.colcon_core.verb:set package 'courseworks' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.805s] Level 5:colcon.colcon_core.verb:set package 'courseworks' build argument 'cmake_clean_cache' from command line to 'False'
+[1.805s] Level 5:colcon.colcon_core.verb:set package 'courseworks' build argument 'cmake_clean_first' from command line to 'False'
+[1.805s] Level 5:colcon.colcon_core.verb:set package 'courseworks' build argument 'cmake_force_configure' from command line to 'False'
+[1.805s] Level 5:colcon.colcon_core.verb:set package 'courseworks' build argument 'ament_cmake_args' from command line to 'None'
+[1.806s] Level 5:colcon.colcon_core.verb:set package 'courseworks' build argument 'catkin_cmake_args' from command line to 'None'
+[1.806s] Level 5:colcon.colcon_core.verb:set package 'courseworks' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.806s] DEBUG:colcon.colcon_core.verb:Building package 'courseworks' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fsp/ROS2_puzzle_bot/Week1_ws/build/courseworks', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks', 'merge_install': False, 'path': '/home/fsp/ROS2_puzzle_bot/Week1_ws/src/courseworks', 'symlink_install': False, 'test_result_base': None}
+[1.826s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.847s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.847s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/fsp/ROS2_puzzle_bot/Week1_ws/src/basic_comms' with build type 'ament_python'
+[1.847s] Level 1:colcon.colcon_core.shell:create_environment_hook('basic_comms', 'ament_prefix_path')
+[1.871s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/share/basic_comms/hook/ament_prefix_path.ps1'
+[1.872s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/share/basic_comms/hook/ament_prefix_path.dsv'
+[1.872s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/share/basic_comms/hook/ament_prefix_path.sh'
+[1.895s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.895s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.968s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/fsp/ROS2_puzzle_bot/Week1_ws/src/courseworks' with build type 'ament_python'
+[1.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('courseworks', 'ament_prefix_path')
+[1.995s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/share/courseworks/hook/ament_prefix_path.ps1'
+[1.996s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/share/courseworks/hook/ament_prefix_path.dsv'
+[1.996s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/share/courseworks/hook/ament_prefix_path.sh'
+[2.019s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.019s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.432s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/fsp/ROS2_puzzle_bot/Week1_ws/src/basic_comms'
+[2.454s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.454s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.852s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/fsp/ROS2_puzzle_bot/Week1_ws/src/courseworks'
+[2.872s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.872s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fsp/ROS2_puzzle_bot/Week1_ws/src/basic_comms': PYTHONPATH=/home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms/prefix_override:/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/basic_comms build --build-base /home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms/build install --record /home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms/install.log --single-version-externally-managed
+[3.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fsp/ROS2_puzzle_bot/Week1_ws/src/courseworks': PYTHONPATH=/home/fsp/ROS2_puzzle_bot/Week1_ws/build/courseworks/prefix_override:/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/courseworks build --build-base /home/fsp/ROS2_puzzle_bot/Week1_ws/build/courseworks/build install --record /home/fsp/ROS2_puzzle_bot/Week1_ws/build/courseworks/install.log --single-version-externally-managed
+[3.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fsp/ROS2_puzzle_bot/Week1_ws/src/courseworks' returned '0': PYTHONPATH=/home/fsp/ROS2_puzzle_bot/Week1_ws/build/courseworks/prefix_override:/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/courseworks build --build-base /home/fsp/ROS2_puzzle_bot/Week1_ws/build/courseworks/build install --record /home/fsp/ROS2_puzzle_bot/Week1_ws/build/courseworks/install.log --single-version-externally-managed
+[3.902s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks' for CMake module files
+[3.902s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks' for CMake config files
+[3.903s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/lib'
+[3.903s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/bin'
+[3.904s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/lib/pkgconfig/courseworks.pc'
+[3.904s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/lib/python3.10/site-packages'
+[3.904s] Level 1:colcon.colcon_core.shell:create_environment_hook('courseworks', 'pythonpath')
+[3.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/share/courseworks/hook/pythonpath.ps1'
+[3.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/share/courseworks/hook/pythonpath.dsv'
+[3.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/share/courseworks/hook/pythonpath.sh'
+[3.926s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/bin'
+[3.926s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(courseworks)
+[3.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/share/courseworks/package.ps1'
+[3.948s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/share/courseworks/package.dsv'
+[3.948s] INFO:colcon.colcon_core.shell:Creating package script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/share/courseworks/package.sh'
+[3.949s] INFO:colcon.colcon_core.shell:Creating package script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/share/courseworks/package.bash'
+[3.950s] INFO:colcon.colcon_core.shell:Creating package script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/share/courseworks/package.zsh'
+[3.951s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fsp/ROS2_puzzle_bot/Week1_ws/install/courseworks/share/colcon-core/packages/courseworks)
+[3.954s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fsp/ROS2_puzzle_bot/Week1_ws/src/basic_comms' returned '0': PYTHONPATH=/home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms/prefix_override:/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/basic_comms build --build-base /home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms/build install --record /home/fsp/ROS2_puzzle_bot/Week1_ws/build/basic_comms/install.log --single-version-externally-managed
+[3.974s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms' for CMake module files
+[3.976s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms' for CMake config files
+[3.977s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/lib'
+[3.977s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/bin'
+[3.977s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/lib/pkgconfig/basic_comms.pc'
+[3.977s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/lib/python3.10/site-packages'
+[3.977s] Level 1:colcon.colcon_core.shell:create_environment_hook('basic_comms', 'pythonpath')
+[4.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/share/basic_comms/hook/pythonpath.ps1'
+[4.001s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/share/basic_comms/hook/pythonpath.dsv'
+[4.001s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/share/basic_comms/hook/pythonpath.sh'
+[4.002s] Level 1:colcon.colcon_core.environment:checking '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/bin'
+[4.002s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(basic_comms)
+[4.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/share/basic_comms/package.ps1'
+[4.023s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/share/basic_comms/package.dsv'
+[4.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/share/basic_comms/package.sh'
+[4.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/share/basic_comms/package.bash'
+[4.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/share/basic_comms/package.zsh'
+[4.025s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fsp/ROS2_puzzle_bot/Week1_ws/install/basic_comms/share/colcon-core/packages/basic_comms)
+[4.025s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.026s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.026s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.026s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.054s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.055s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.055s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.071s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.094s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/local_setup.ps1'
+[4.096s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/_local_setup_util_ps1.py'
+[4.098s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/setup.ps1'
+[4.121s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/local_setup.sh'
+[4.122s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/_local_setup_util_sh.py'
+[4.123s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/setup.sh'
+[4.145s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/local_setup.bash'
+[4.146s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/setup.bash'
+[4.168s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/local_setup.zsh'
+[4.169s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fsp/ROS2_puzzle_bot/Week1_ws/install/setup.zsh'

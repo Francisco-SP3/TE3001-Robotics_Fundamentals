@@ -1,0 +1,26 @@
+[1.611s] Invoking command in '/home/fsp/puzzle_bot/Week1_ws/src/courseworks': PYTHONPATH=/home/fsp/puzzle_bot/Week1_ws/build/courseworks/prefix_override:/home/fsp/puzzle_bot/Week1_ws/install/courseworks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/courseworks build --build-base /home/fsp/puzzle_bot/Week1_ws/build/courseworks/build install --record /home/fsp/puzzle_bot/Week1_ws/build/courseworks/install.log --single-version-externally-managed
+[1.998s] running egg_info
+[1.999s] writing ../../build/courseworks/courseworks.egg-info/PKG-INFO
+[2.000s] writing dependency_links to ../../build/courseworks/courseworks.egg-info/dependency_links.txt
+[2.000s] writing entry points to ../../build/courseworks/courseworks.egg-info/entry_points.txt
+[2.000s] writing requirements to ../../build/courseworks/courseworks.egg-info/requires.txt
+[2.000s] writing top-level names to ../../build/courseworks/courseworks.egg-info/top_level.txt
+[2.006s] reading manifest file '../../build/courseworks/courseworks.egg-info/SOURCES.txt'
+[2.007s] writing manifest file '../../build/courseworks/courseworks.egg-info/SOURCES.txt'
+[2.009s] running build
+[2.010s] running build_py
+[2.012s] copying courseworks/signal_generator.py -> /home/fsp/puzzle_bot/Week1_ws/build/courseworks/build/lib/courseworks
+[2.013s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.019s]   warnings.warn(
+[2.020s] running install
+[2.020s] running install_lib
+[2.020s] copying /home/fsp/puzzle_bot/Week1_ws/build/courseworks/build/lib/courseworks/signal_generator.py -> /home/fsp/puzzle_bot/Week1_ws/install/courseworks/lib/python3.10/site-packages/courseworks
+[2.020s] byte-compiling /home/fsp/puzzle_bot/Week1_ws/install/courseworks/lib/python3.10/site-packages/courseworks/signal_generator.py to signal_generator.cpython-310.pyc
+[2.020s] running install_data
+[2.021s] running install_egg_info
+[2.021s] removing '/home/fsp/puzzle_bot/Week1_ws/install/courseworks/lib/python3.10/site-packages/courseworks-0.0.0-py3.10.egg-info' (and everything under it)
+[2.021s] Copying ../../build/courseworks/courseworks.egg-info to /home/fsp/puzzle_bot/Week1_ws/install/courseworks/lib/python3.10/site-packages/courseworks-0.0.0-py3.10.egg-info
+[2.031s] running install_scripts
+[2.062s] Installing signal_generator script to /home/fsp/puzzle_bot/Week1_ws/install/courseworks/lib/courseworks
+[2.064s] writing list of installed files to '/home/fsp/puzzle_bot/Week1_ws/build/courseworks/install.log'
+[2.115s] Invoked command in '/home/fsp/puzzle_bot/Week1_ws/src/courseworks' returned '0': PYTHONPATH=/home/fsp/puzzle_bot/Week1_ws/build/courseworks/prefix_override:/home/fsp/puzzle_bot/Week1_ws/install/courseworks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/courseworks build --build-base /home/fsp/puzzle_bot/Week1_ws/build/courseworks/build install --record /home/fsp/puzzle_bot/Week1_ws/build/courseworks/install.log --single-version-externally-managed
