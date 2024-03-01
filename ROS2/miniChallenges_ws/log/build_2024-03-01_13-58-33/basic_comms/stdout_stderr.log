@@ -1,0 +1,27 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating basic_comms.egg-info
+writing basic_comms.egg-info/PKG-INFO
+writing dependency_links to basic_comms.egg-info/dependency_links.txt
+writing entry points to basic_comms.egg-info/entry_points.txt
+writing requirements to basic_comms.egg-info/requires.txt
+writing top-level names to basic_comms.egg-info/top_level.txt
+writing manifest file 'basic_comms.egg-info/SOURCES.txt'
+reading manifest file 'basic_comms.egg-info/SOURCES.txt'
+writing manifest file 'basic_comms.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/python3.10/site-packages/basic-comms.egg-link (link to .)
+Installing listener script to /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/basic_comms
+Installing talker script to /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/basic_comms
+
+Installed /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms
+running install_data
+creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/share/ament_index
+creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/share/ament_index/resource_index
+creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/share/ament_index/resource_index/packages
+copying resource/basic_comms -> /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/share/ament_index/resource_index/packages
+copying package.xml -> /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/share/basic_comms

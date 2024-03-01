@@ -1,7 +1,0 @@
-<launch>
-  <node pkg="courseworks" exec="process" name="process" namespace="process"/>
-  <node pkg="courseworks" exec="signal_generator" name="signal_generator" namespace="signal_generator"/>
-  <node pkg="rqt_plot" exec="rqt_plot" name="signal_plot">
-    <remap from="/plot" to="/signal/data"/>
-  </node>
-</launch>
