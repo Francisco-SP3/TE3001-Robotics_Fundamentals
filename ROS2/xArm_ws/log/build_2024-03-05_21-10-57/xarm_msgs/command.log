@@ -1,0 +1,1 @@
+Invoking command in '/home/fsp/TE3001-Robotics_Fundamentals/ROS2/xArm_ws/build/xarm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/fsp/TE3001-Robotics_Fundamentals/ROS2/xArm_ws/build/xarm_msgs -- -j4 -l4

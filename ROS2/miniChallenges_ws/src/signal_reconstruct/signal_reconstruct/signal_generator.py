@@ -4,9 +4,10 @@
 import rclpy
 import numpy as np
 from rclpy.node import Node
-from std_msgs.msg import Int8
 from std_msgs.msg import Float32
+from custom_msgs.msg import Signal_param
 from scipy import signal
+
 
 # Node class
 class Signal_Generator(Node):
@@ -26,7 +27,7 @@ class Signal_Generator(Node):
         )
         # Publisher topics
         self.sig_pub = self.create_publisher(Float32, 'signal', 10)
-        self.param_pub = self.create_publisher(Float32, 'signal_params', 10)
+        self.param_pub = self.create_publisher(Signal_param, 'signal_params', 10)
         # Timer definitions
         self.time = 0.0
         self.sig_timer_period = 1000 #hz
@@ -36,6 +37,8 @@ class Signal_Generator(Node):
         # Signal definition
         self.signal = 0.0
         self.sig_msg = Float32()
+        # Parameters definition
+        self.param_msg = Signal_param()
         # Indicate succesful inicialization
         self.get_logger().info('Signal generation node successfully initialized!!!')
         
@@ -51,12 +54,12 @@ class Signal_Generator(Node):
     # Parameter timer callback
     def sig_timer_callback(self):
         # Update parameters
-        self.type = self.get_parameter('type').get_parameter_value().integer_value
-        self.amplitude = self.get_parameter('amplitude').get_parameter_value().double_value
-        self.frequency = self.get_parameter('frequency').get_parameter_value().double_value
-        self.offset = self.get_parameter('offset').get_parameter_value().double_value
+        self.param_msg.type = self.get_parameter('type').get_parameter_value().integer_value
+        self.param_msg.amplitude = self.get_parameter('amplitude').get_parameter_value().double_value
+        self.param_msg.frequency = self.get_parameter('frequency').get_parameter_value().double_value
+        self.param_msg.offset = self.get_parameter('offset').get_parameter_value().double_value
         # Publish parameters
-        self.param_pub.publish(self.amplitude)
+        self.param_pub.publish(self.param_msg)
         # Show data
         self.get_logger().info('time = %0.1f, signal = %0.3f, type = %1d, amp = %0.1f, freq = %0.1f, off = %0.1f' % (self.time, self.signal, self.type, self.amplitude, self.frequency, self.offset))
 

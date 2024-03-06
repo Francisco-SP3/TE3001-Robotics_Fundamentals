@@ -1,0 +1,1 @@
+/home/fsp/TE3001-Robotics_Fundamentals/ROS2/xArm_ws/src/xarm_ros2/xarm_description/launch/xarm6_rviz_display.launch.py

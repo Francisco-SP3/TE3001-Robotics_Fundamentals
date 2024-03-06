@@ -1,0 +1,141 @@
+[  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  0%] Built target ament_cmake_python_symlink_xarm_msgs
+running egg_info
+creating xarm_msgs.egg-info
+writing xarm_msgs.egg-info/PKG-INFO
+writing dependency_links to xarm_msgs.egg-info/dependency_links.txt
+writing top-level names to xarm_msgs.egg-info/top_level.txt
+writing manifest file 'xarm_msgs.egg-info/SOURCES.txt'
+reading manifest file 'xarm_msgs.egg-info/SOURCES.txt'
+writing manifest file 'xarm_msgs.egg-info/SOURCES.txt'
+[  0%] Built target ament_cmake_python_build_xarm_msgs_egg
+[  0%] Built target xarm_msgs__cpp
+[  0%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  0%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[  0%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+gmake[2]: *** Deleting file 'rosidl_typesupport_introspection_cpp/xarm_msgs/msg/detail/robot_msg__rosidl_typesupport_introspection_cpp.hpp'
+gmake[2]: *** Deleting file 'rosidl_generator_c/xarm_msgs/srv/detail/set_tcp_load__functions.c'
+gmake[2]: *** Deleting file 'rosidl_typesupport_fastrtps_cpp/xarm_msgs/msg/detail/dds_fastrtps/robot_msg__type_support.cpp'
+Traceback (most recent call last):
+  File "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 28, in <module>
+    sys.exit(main())
+  File "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 24, in main
+    generate_cpp(args.generator_arguments_file, args.typesupports)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py", line 28, in generate_cpp
+    return generate_files(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+Traceback (most recent call last):
+  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 23, in <module>
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    sys.exit(main())
+  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 19, in main
+gmake[2]: *** [CMakeFiles/xarm_msgs__rosidl_generator_c.dir/build.make:908: rosidl_generator_c/xarm_msgs/srv/detail/set_tcp_load__functions.c] Interrupt
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    generate_cpp(args.generator_arguments_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_cpp/__init__.py", line 24, in generate_cpp
+    return _parser.parse(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse
+    return generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 87, in generate_files
+    expand_template(
+gmake[2]: *** Deleting file 'rosidl_typesupport_cpp/xarm_msgs/msg/robot_msg__type_support.cpp'
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 149, in expand_template
+    interpreter.string(template_content, template_path, locals=data)
+  File "/usr/lib/python3/dist-packages/em.py", line 2391, in string
+gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/xarm_msgs__rosidl_generator_c.dir/all] Interrupt
+Traceback (most recent call last):
+    return self.parser.parse(text, start=start, on_error=on_error)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 31, in <module>
+    sys.exit(main())
+  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 27, in main
+    generate_cpp(args.generator_arguments_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_cpp/__init__.py", line 31, in generate_cpp
+    return generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    return self.parser.parse(stream, chosen_start, **kw)
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    self.safe(scanner, True, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2401, in safe
+    return _parser.parse(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 619, in parse
+    to_scan = self._parse(lexer, columns, to_scan, start_symbol)
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 146, in _parse
+    return self.parser.parse(text, start=start, on_error=on_error)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+    return self.parser.parse(stream, chosen_start, **kw)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 266, in parse
+    to_scan = self._parse(lexer, columns, to_scan, start_symbol)
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 144, in _parse
+    to_scan = scan(i, to_scan)
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 84, in scan
+    self.predict_and_complete(i, to_scan, columns, transitives)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 140, in predict_and_complete
+    self.parse(scanner, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2421, in parse
+    next_to_scan = set()
+    new_item = Item(rule, 0, i)
+KeyboardInterrupt
+KeyboardInterrupt
+    token.run(self, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 1425, in run
+    interpreter.execute(self.code, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2596, in execute
+    _exec(statements, self.globals, locals)
+  File "<string>", line 17, in <module>
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 198, in _expand_template
+    interpreter.string(content, str(template_path), kwargs)
+  File "/usr/lib/python3/dist-packages/em.py", line 2391, in string
+    self.safe(scanner, True, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2401, in safe
+    self.parse(scanner, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2421, in parse
+    token.run(self, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 1425, in run
+    interpreter.execute(self.code, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2596, in execute
+    _exec(statements, self.globals, locals)
+  File "<string>", line 2, in <module>
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 198, in _expand_template
+    interpreter.string(content, str(template_path), kwargs)
+  File "/usr/lib/python3/dist-packages/em.py", line 2391, in string
+    self.safe(scanner, True, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2401, in safe
+    self.parse(scanner, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2421, in parse
+    token.run(self, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 1547, in run
+    self.subrun(info[0][1], interpreter, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 1631, in subrun
+    token.run(interpreter, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 1333, in run
+    result = interpreter.evaluate(self.testCode, locals)
+  File "/usr/lib/python3/dist-packages/em.py", line 2573, in evaluate
+    result = eval(expression, self.globals, locals)
+  File "<string>", line 1, in <module>
+KeyboardInterrupt
+Exception ignored in: <function Interpreter.__del__ at 0x7facf1fa6290>
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/em.py", line 2094, in __del__
+  File "/usr/lib/python3/dist-packages/em.py", line 2157, in shutdown
+  File "/usr/lib/python3/dist-packages/em.py", line 2647, in finalize
+  File "/usr/lib/python3/dist-packages/em.py", line 2200, in push
+AttributeError: '_io.TextIOWrapper' object has no attribute 'push'
+gmake[2]: *** [CMakeFiles/xarm_msgs__rosidl_typesupport_cpp.dir/build.make:190: rosidl_typesupport_cpp/xarm_msgs/msg/robot_msg__type_support.cpp] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:394: CMakeFiles/xarm_msgs__rosidl_typesupport_cpp.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/xarm_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:192: rosidl_typesupport_introspection_cpp/xarm_msgs/msg/detail/robot_msg__rosidl_typesupport_introspection_cpp.hpp] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:368: CMakeFiles/xarm_msgs__rosidl_typesupport_introspection_cpp.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/xarm_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:192: rosidl_typesupport_fastrtps_cpp/xarm_msgs/msg/detail/dds_fastrtps/robot_msg__type_support.cpp] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:290: CMakeFiles/xarm_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

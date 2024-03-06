@@ -1,0 +1,21 @@
+[3.429s] Invoking command in '/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms': PYTHONPATH=/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms/prefix_override:/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms/build --no-deps install_data
+[4.161s] running develop
+[4.162s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.164s]   warnings.warn(
+[4.167s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.168s]   warnings.warn(
+[4.586s] running egg_info
+[4.587s] writing basic_comms.egg-info/PKG-INFO
+[4.594s] writing dependency_links to basic_comms.egg-info/dependency_links.txt
+[4.594s] writing entry points to basic_comms.egg-info/entry_points.txt
+[4.594s] writing requirements to basic_comms.egg-info/requires.txt
+[4.595s] writing top-level names to basic_comms.egg-info/top_level.txt
+[4.599s] reading manifest file 'basic_comms.egg-info/SOURCES.txt'
+[4.602s] writing manifest file 'basic_comms.egg-info/SOURCES.txt'
+[4.605s] running build_ext
+[4.608s] Creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/python3.10/site-packages/basic-comms.egg-link (link to .)
+[4.611s] Installing listener script to /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/basic_comms
+[4.611s] Installing talker script to /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/basic_comms
+[4.612s] 
+[4.613s] Installed /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms
+[4.613s] running install_data
