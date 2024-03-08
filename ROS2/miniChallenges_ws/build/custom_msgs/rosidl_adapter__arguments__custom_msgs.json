@@ -1,0 +1,6 @@
+{
+  "package_name": "custom_msgs",
+  "non_idl_tuples": [
+    "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/src/custom_msgs:msg/Signal_param.msg"
+  ]
+}

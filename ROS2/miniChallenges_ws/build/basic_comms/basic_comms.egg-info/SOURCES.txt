@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+basic_comms/__init__.py
+basic_comms/listener.py
+basic_comms/talker.py
+basic_comms.egg-info/PKG-INFO
+basic_comms.egg-info/SOURCES.txt
+basic_comms.egg-info/dependency_links.txt
+basic_comms.egg-info/entry_points.txt
+basic_comms.egg-info/requires.txt
+basic_comms.egg-info/top_level.txt
+basic_comms.egg-info/zip-safe
+resource/basic_comms

@@ -1,0 +1,4 @@
+[console_scripts]
+reconstruction = signal_reconstruct.reconstruction:main
+signal_generator = signal_reconstruct.signal_generator:main
+

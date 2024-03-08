@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+courseworks/__init__.py
+courseworks/process.py
+courseworks/signal_generator.py
+courseworks.egg-info/PKG-INFO
+courseworks.egg-info/SOURCES.txt
+courseworks.egg-info/dependency_links.txt
+courseworks.egg-info/entry_points.txt
+courseworks.egg-info/requires.txt
+courseworks.egg-info/top_level.txt
+courseworks.egg-info/zip-safe
+launch/challenge_launch.py
+resource/courseworks
