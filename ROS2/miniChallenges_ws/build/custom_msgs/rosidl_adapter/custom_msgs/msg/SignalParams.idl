@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/SignalParams.msg
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module msg {
+    struct SignalParams {
+      uint8 type;
+
+      float amplitude;
+
+      float frequency;
+
+      float offset;
+
+      float phase;
+
+      float time;
+    };
+  };
+};

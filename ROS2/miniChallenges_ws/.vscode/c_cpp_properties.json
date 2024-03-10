@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/fsp/ROS2_puzzle_bot/xArm_ws/install/xarm_planner/include/**",
+        "/home/fsp/ROS2_puzzle_bot/xArm_ws/install/xarm_gazebo/include/**",
+        "/home/fsp/ROS2_puzzle_bot/xArm_ws/install/xarm_controller/include/**",
+        "/home/fsp/ROS2_puzzle_bot/xArm_ws/install/xarm_api/include/**",
+        "/home/fsp/ROS2_puzzle_bot/xArm_ws/install/xarm_msgs/include/**",
+        "/home/fsp/ROS2_puzzle_bot/xArm_ws/install/realsense_gazebo_plugin/include/**",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/ros2_utilities_ws/install/micro_ros_agent/include/**",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/ros2_utilities_ws/install/micro_ros_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/src/custom_msgs/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

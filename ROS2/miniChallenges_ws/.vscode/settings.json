@@ -1,0 +1,26 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/signal_reconstruct",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/lib/python3.10/site-packages",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/courseworks",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/lib/python3.10/site-packages",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/python3.10/site-packages",
+        "/home/fsp/ROS2_puzzle_bot/xArm_ws/install/xarm_msgs/local/lib/python3.10/dist-packages",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/ros2_utilities_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/signal_reconstruct",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/lib/python3.10/site-packages",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/courseworks",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/lib/python3.10/site-packages",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/python3.10/site-packages",
+        "/home/fsp/ROS2_puzzle_bot/xArm_ws/install/xarm_msgs/local/lib/python3.10/dist-packages",
+        "/home/fsp/TE3001-Robotics_Fundamentals/ROS2/ros2_utilities_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

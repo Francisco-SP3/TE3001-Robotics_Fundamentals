@@ -1,0 +1,31 @@
+[4.089s] Invoking command in '/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/courseworks': PYTHONPATH=/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/courseworks/prefix_override:/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/courseworks/build --no-deps install_data
+[5.344s] running develop
+[5.345s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.345s]   warnings.warn(
+[5.348s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[5.348s]   warnings.warn(
+[6.041s] running egg_info
+[6.041s] creating courseworks.egg-info
+[6.042s] writing courseworks.egg-info/PKG-INFO
+[6.043s] writing dependency_links to courseworks.egg-info/dependency_links.txt
+[6.043s] writing entry points to courseworks.egg-info/entry_points.txt
+[6.043s] writing requirements to courseworks.egg-info/requires.txt
+[6.044s] writing top-level names to courseworks.egg-info/top_level.txt
+[6.044s] writing manifest file 'courseworks.egg-info/SOURCES.txt'
+[6.047s] reading manifest file 'courseworks.egg-info/SOURCES.txt'
+[6.049s] writing manifest file 'courseworks.egg-info/SOURCES.txt'
+[6.052s] running build_ext
+[6.053s] Creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/lib/python3.10/site-packages/courseworks.egg-link (link to .)
+[6.060s] Installing process script to /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/lib/courseworks
+[6.060s] Installing signal_generator script to /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/lib/courseworks
+[6.061s] 
+[6.061s] Installed /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/courseworks
+[6.061s] running install_data
+[6.062s] creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/share/ament_index
+[6.062s] creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/share/ament_index/resource_index
+[6.062s] creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/share/ament_index/resource_index/packages
+[6.062s] copying resource/courseworks -> /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/share/ament_index/resource_index/packages
+[6.063s] copying package.xml -> /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/share/courseworks
+[6.063s] creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/share/courseworks/launch
+[6.063s] copying launch/challenge_launch.py -> /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/share/courseworks/launch
+[6.242s] Invoked command in '/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/courseworks' returned '0': PYTHONPATH=/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/courseworks/prefix_override:/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/courseworks/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/courseworks/build --no-deps install_data

@@ -1,0 +1,29 @@
+[4.250s] Invoking command in '/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms': PYTHONPATH=/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms/prefix_override:/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms/build --no-deps install_data
+[5.223s] running develop
+[5.223s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.224s]   warnings.warn(
+[5.227s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[5.227s]   warnings.warn(
+[5.861s] running egg_info
+[5.862s] creating basic_comms.egg-info
+[5.863s] writing basic_comms.egg-info/PKG-INFO
+[5.864s] writing dependency_links to basic_comms.egg-info/dependency_links.txt
+[5.864s] writing entry points to basic_comms.egg-info/entry_points.txt
+[5.865s] writing requirements to basic_comms.egg-info/requires.txt
+[5.865s] writing top-level names to basic_comms.egg-info/top_level.txt
+[5.866s] writing manifest file 'basic_comms.egg-info/SOURCES.txt'
+[5.871s] reading manifest file 'basic_comms.egg-info/SOURCES.txt'
+[5.872s] writing manifest file 'basic_comms.egg-info/SOURCES.txt'
+[5.876s] running build_ext
+[5.877s] Creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/python3.10/site-packages/basic-comms.egg-link (link to .)
+[5.879s] Installing listener script to /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/basic_comms
+[5.880s] Installing talker script to /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/basic_comms
+[5.882s] 
+[5.882s] Installed /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms
+[5.882s] running install_data
+[5.883s] creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/share/ament_index
+[5.883s] creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/share/ament_index/resource_index
+[5.884s] creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/share/ament_index/resource_index/packages
+[5.884s] copying resource/basic_comms -> /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/share/ament_index/resource_index/packages
+[5.885s] copying package.xml -> /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/share/basic_comms
+[6.010s] Invoked command in '/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms' returned '0': PYTHONPATH=/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms/prefix_override:/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/basic_comms/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/basic_comms/build --no-deps install_data

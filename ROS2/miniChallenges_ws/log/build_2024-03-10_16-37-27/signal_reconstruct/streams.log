@@ -1,0 +1,33 @@
+[3.683s] Invoking command in '/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/signal_reconstruct': PYTHONPATH=/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/signal_reconstruct/prefix_override:/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/signal_reconstruct/build --no-deps install_data
+[4.436s] running develop
+[4.446s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.446s]   warnings.warn(
+[4.449s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.449s]   warnings.warn(
+[5.425s] running egg_info
+[5.426s] creating signal_reconstruct.egg-info
+[5.426s] writing signal_reconstruct.egg-info/PKG-INFO
+[5.426s] writing dependency_links to signal_reconstruct.egg-info/dependency_links.txt
+[5.427s] writing entry points to signal_reconstruct.egg-info/entry_points.txt
+[5.427s] writing requirements to signal_reconstruct.egg-info/requires.txt
+[5.427s] writing top-level names to signal_reconstruct.egg-info/top_level.txt
+[5.428s] writing manifest file 'signal_reconstruct.egg-info/SOURCES.txt'
+[5.446s] reading manifest file 'signal_reconstruct.egg-info/SOURCES.txt'
+[5.448s] writing manifest file 'signal_reconstruct.egg-info/SOURCES.txt'
+[5.451s] running build_ext
+[5.452s] Creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/lib/python3.10/site-packages/signal-reconstruct.egg-link (link to .)
+[5.454s] Installing reconstruction script to /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/lib/signal_reconstruct
+[5.454s] Installing signal_generator script to /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/lib/signal_reconstruct
+[5.455s] 
+[5.455s] Installed /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/signal_reconstruct
+[5.455s] running install_data
+[5.456s] creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/share/ament_index
+[5.456s] creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/share/ament_index/resource_index
+[5.456s] creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/share/ament_index/resource_index/packages
+[5.456s] copying resource/signal_reconstruct -> /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/share/ament_index/resource_index/packages
+[5.456s] copying package.xml -> /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/share/signal_reconstruct
+[5.457s] creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/share/signal_reconstruct/launch
+[5.457s] copying launch/challenge_launch.py -> /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/share/signal_reconstruct/launch
+[5.457s] creating /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/share/signal_reconstruct/config
+[5.457s] copying config/params.yaml -> /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/share/signal_reconstruct/config
+[5.646s] Invoked command in '/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/signal_reconstruct' returned '0': PYTHONPATH=/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/signal_reconstruct/prefix_override:/home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/install/signal_reconstruct/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/fsp/TE3001-Robotics_Fundamentals/ROS2/miniChallenges_ws/build/signal_reconstruct/build --no-deps install_data
