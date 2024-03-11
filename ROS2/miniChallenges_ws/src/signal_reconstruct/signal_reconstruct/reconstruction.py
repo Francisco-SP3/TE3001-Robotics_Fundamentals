@@ -8,7 +8,6 @@ from std_msgs.msg import Float32
 from custom_msgs.msg import SignalParams
 from scipy import signal
 
-
 # Node class
 class Reconstruction(Node):
     # Construction
@@ -21,15 +20,39 @@ class Reconstruction(Node):
         self.sig_pub = self.create_publisher(Float32, 'signal_reconstructed', 10)
         # Timer definitions
         self.time = 0.0
+        self.prev_time = -10.0
+        self.new_time = 0.0
         self.sig_timer_period = 1000 #hz
         self.sig_timer = self.create_timer(1/self.sig_timer_period, self.sig_timer_callback)
         # Signal definition
         self.signal = 0.0
+        self.type = 0
+        self.amplitude = 0.0
+        self.frequency = 0.0
+        self.offset = 0.0
+        self.phase = 0.0
         self.sig_msg = Float32()
         # Parameters definition
         self.param_msg = SignalParams()
         # Indicate succesful inicialization
-        self.get_logger().info('Signal generation node successfully initialized!!!')
+        self.get_logger().info('Signal reconstruction node successfully initialized!!!')
+
+    # Parameters callback
+    def param_callback(self, msg):
+        self.new_time = msg.time
+        if(self.new_time != self.prev_time):
+            self.type = msg.type
+            self.amplitude = msg.amplitude
+            self.frequency = msg.frequency
+            self.offset = msg.offset
+            self.phase = msg.phase
+            self.time = msg.time
+        else:
+            self.amplitude = 0.0
+            self.offset = 0.0
+            self.get_logger().info('Repeated parameters!!!')
+        self.prev_time = self.new_time
+        self.get_logger().info('Signal parameters received!!!')
         
     # Signal timer callback
     def sig_timer_callback(self):
