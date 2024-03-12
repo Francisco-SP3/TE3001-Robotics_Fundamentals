@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/fsp/TE3001-Robotics_Fundamentals/Manim/media/videos/challenge_scenes/1080p60/partial_movie_files/MovingCameraOnGraph/226047832_1741189472_1805973299.mp4'
+file 'file:/home/fsp/TE3001-Robotics_Fundamentals/Manim/media/videos/challenge_scenes/1080p60/partial_movie_files/MovingCameraOnGraph/3852226416_4233819776_1805973299.mp4'
+file 'file:/home/fsp/TE3001-Robotics_Fundamentals/Manim/media/videos/challenge_scenes/1080p60/partial_movie_files/MovingCameraOnGraph/2630398757_1666412814_3116090074.mp4'
+file 'file:/home/fsp/TE3001-Robotics_Fundamentals/Manim/media/videos/challenge_scenes/1080p60/partial_movie_files/MovingCameraOnGraph/3500094023_2304249630_3208505177.mp4'
