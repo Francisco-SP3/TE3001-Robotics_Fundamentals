@@ -49,18 +49,26 @@ class Intro(Scene):
 
 class motorAnalysis(MovingCameraScene):
     def construct(self):
-        title = Text("Motor Analysis").move_to(3.25*UP + 4*LEFT)
+        title = Text("Motor Analysis").move_to(3.25*UP + 4*RIGHT)
         OoB = Dot(10*UP, radius=0.0)
-        xRange = [-100, 12600, 100]
-        yRange = [-0.5, 5.5, 0.5]
+        xRange = [-100, 11200, 1000]
+        yRange = [-0.5, 6, 0.5]
         coords = self.return_coords_from_csv("motor_behaviour")
-        ax = Axes(x_range=xRange, y_range=yRange).move_to(0.5*DOWN)
+        ax = Axes(x_range=xRange, 
+                  y_range=yRange, 
+                  tips=False,
+                  axis_config={"include_numbers": True},
+                  ).move_to(0.5*DOWN)
+        labels = ax.get_axis_labels(
+            Tex("time (ms)").scale(0.7), Tex(r"\alpha").scale(0.45)
+        )
+        
         
         self.camera.frame.save_state()
         self.add(OoB)
         self.play(self.camera.frame.animate.move_to(OoB))
         self.add(title)
-        self.add(ax)
+        self.add(ax, labels)
         for coord in coords:
             dot = Dot(ax.c2p(coord[0],coord[1]), color=WHITE)
             self.add(dot)
