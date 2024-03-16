@@ -1,1 +1,0 @@
-Invoking command in '/home/fsp/TE3001-Robotics_Fundamentals/ROS2/xArm_ws/build/xarm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/fsp/TE3001-Robotics_Fundamentals/ROS2/xArm_ws/src/xarm_ros2/xarm_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/fsp/TE3001-Robotics_Fundamentals/ROS2/xArm_ws/install/xarm_msgs
