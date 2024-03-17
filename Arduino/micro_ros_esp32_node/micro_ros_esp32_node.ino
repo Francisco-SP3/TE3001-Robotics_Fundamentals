@@ -7,6 +7,7 @@
 #include <rclc/executor.h>
 // ROS Standard Message Library
 #include <std_msgs/msg/int32.h>
+#include <std_msgs/msg/float32.h>
 // Standard C Libraries
 #include <stdio.h>
 
@@ -17,6 +18,8 @@ rcl_publisher_t voltPublisher;
 rcl_subscription_t pwmSubscriber;
 // ROS messages
 std_msgs__msg__Float32 dutyCycle;
+std_msgs__msg__Float32 voltage;
+std_msgs__msg__Int32 raw_pot;
 // ROS timers
 rcl_timer_t timer_1;
 rcl_timer_t timer_2;
@@ -26,22 +29,22 @@ rclc_support_t support;
 rcl_allocator_t allocator;
 
 // PIN definition
-#define LED_PIN 13
-#define PWM_PIN 15
-#define POT_PIN 36
+#define LED_PIN 32
+#define PWM_PIN 25
+#define POT_PIN 33
 
 // Constants and variables
-pot_value = 0;
-pwm_freq = 5000; //Hz
-pwm_res = 8; //Bits
-pwm_chan = 0;
-pwm_duty = 0; //Percentage
+int pwm_freq = 5000;
+float pwm_T = 1/pwm_freq;
+int pwm_res = 8;
+int pwm_resolution = (int)(pow(2, pwm_res) - 1);
+int pwm_chan = 0;
 
 // Timer callback 1
 void timer1_callback(rcl_timer_t * timer, int64_t last_call_time){  
   RCLC_UNUSED(last_call_time);
   if (timer != NULL) {
-    pot_value =  analogRead(POT_PIN);
+    raw_pot.data =  analogRead(POT_PIN);
   } 
 }
 
@@ -49,8 +52,11 @@ void timer1_callback(rcl_timer_t * timer, int64_t last_call_time){
 void timer2_callback(rcl_timer_t * timer, int64_t last_call_time){  
   RCLC_UNUSED(last_call_time);
   if (timer != NULL) {
-    RCSOFTCHECK(rcl_publish(&rawPublisher, &msg, NULL)); 
-    RCSOFTCHECK(rcl_publish(&voltPublisher, &msg, NULL));
+    // Calculate the voltage
+    voltage.data = map(raw_pot.data, 0, 4096, 0, 3.3 * 100) / 100.0;
+    // Publish the voltage and the raw potentiometer value
+    RCSOFTCHECK(rcl_publish(&rawPublisher, &raw_pot, NULL)); 
+    RCSOFTCHECK(rcl_publish(&voltPublisher, &voltage, NULL));
   }
 }
 
@@ -59,8 +65,8 @@ void pwm_callback(const void * msgin){
   // Cast the message to the correct type
   const std_msgs__msg__Float32 * msg = (const std_msgs__msg__Float32 *)msgin;
   // Set the PWM duty cycle
-  pwm_duty = (int)(msg->data);
-
+  int pwm = (msgin.data)/100 * pwm_res;
+  ledcWrite(pwm_chan, pwm);
 }
 
 // Check the return value of each function. If an error occurs, it will enter the error_loop.
@@ -70,7 +76,7 @@ void pwm_callback(const void * msgin){
 // Error loop
 void error_loop(){
   while(1){
-    Serial.println("Error")
+    digitalWrite(LED_PIN, !digitalRead(LED_PIN));
     delay(100);
   }
 }
@@ -78,47 +84,69 @@ void error_loop(){
 // Arduino setup
 void setup() {
   set_microros_transports();
-  
+
+  // LED
   pinMode(LED_PIN, OUTPUT);
-  digitalWrite(LED_PIN, HIGH);  
+  digitalWrite(LED_PIN, HIGH);
+
+  // PWM
+  ledcSetup(pwm_chan, pwm_freq, pwm_res);
+  ledcAttachPin(PWM_PIN, pwm_chan);
   
   delay(2000);
 
   allocator = rcl_get_default_allocator();
 
-  //create init_options
+  // Create init_options
   RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
 
-  // create node
-  RCCHECK(rclc_node_init_default(&node, "micro_ros_arduino_node", "", &support));
+  // Create node
+  RCCHECK(rclc_node_init_default(&node, "pwm_node", "", &support));
 
-  // create publisher
+  // Create publishers
   RCCHECK(rclc_publisher_init_default(
-    &publisher,
+    &rawPublisher,
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
-    "micro_ros_arduino_node_publisher"));
+    "/raw_pot"));
 
-  // create subscriber
+  RCCHECK(rclc_publisher_init_default(
+    &voltPublisher,
+    &node,
+    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
+    "/voltage"));
+
+  // Create subscriber
   RCCHECK(rclc_subscription_init_default(
-    &subscriber,
+    &pwmSubscriber,
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
-    "micro_ros_arduino_subscriber"));
+    "pwm_duty_cycle"));
 
-  // create timer,
+  // Create timers for publishing
   const unsigned int timer_timeout = 1000;
   RCCHECK(rclc_timer_init_default(
-    &timer,
+    &timer_1,
     &support,
     RCL_MS_TO_NS(timer_timeout),
-    timer_callback));
+    timer1_callback));
 
-  // create executor
+  const unsigned int timer_timeout2 = 100;
+  RCCHECK(rclc_timer_init_default(
+    &timer_2,
+    &support,
+    RCL_MS_TO_NS(timer_timeout2),
+    timer2_callback));
+
+  // Create executor
   RCCHECK(rclc_executor_init(&executor, &support.context, 1, &allocator));
-  RCCHECK(rclc_executor_add_timer(&executor, &timer));
+  RCCHECK(rclc_executor_add_timer(&executor, &timer_1));
+  RCCHECK(rclc_executor_add_timer(&executor, &timer_2));
+  RCCHECK(rclc_executor_add_subscription(&executor, &pwmSubscriber, &dutyCycle, &pwm_callback, ON_NEW_DATA))
 
-  msg.data = 0;
+  dutyCycle.data = 0.0;
+  voltage.data = 0;
+  raw_pot.data = 0;
 }
 
 // Arduino loop
